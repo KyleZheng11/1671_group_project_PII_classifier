@@ -5,3 +5,5 @@ accelerate==1.15.0
 huggingface-hub==0.36.2
 numpy==1.26.4
 pyarrow==19.0.1
+scikit-learn
+seqeval
