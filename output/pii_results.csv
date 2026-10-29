@@ -1,0 +1,111 @@
+start,end,text,label,score
+0,9,HALVORSEN,company_name,0.6068
+235,251,"October 27, 2026",other,0.998
+309,325,"October 13, 2026",other,0.9935
+344,349,07:42,other,0.9628
+493,504,HFL-WS-0447,other,0.705
+527,534,payable,other,0.6663
+546,553,Marisol,first_name,0.9996
+554,567,Okonkwo-Reyes,last_name,0.8874
+581,589,E-204718,other,0.9946
+595,605,03/14/1988,other,0.9597
+635,662,m.okonkwo.reyes@example.com,email,0.9993
+697,711,(412) 555-0147,phone_number,0.9967
+742,759,00:1A:2B:3C:4D:5E,other,0.9907
+840,852,203.0.113.42,other,0.8621
+885,897,198.51.100.7,other,0.9612
+920,942,2001:db8::ff00:42:8329,other,0.9845
+1171,1178,Okonkwo,last_name,0.9983
+1178,1179,-,other,0.4983
+1179,1184,Reyes,last_name,0.8597
+1233,1243,Washington,other,0.7848
+1362,1366,Bill,first_name,0.3479
+1367,1373,Hunter,last_name,0.8425
+1466,1485,4111 1111 1111 1111,other,0.9432
+1502,1507,09/29,other,0.8753
+1516,1519,737,other,0.997
+1695,1703,Theodore,first_name,0.9907
+1705,1710,Teddy,first_name,0.9406
+1712,1717,Varga,last_name,0.9934
+1743,1749,tvarga,email,0.9551
+1808,1827,t.varga@examp1e.org,email,0.9985
+1887,1892,Varga,last_name,0.9972
+1917,1936,t.varga@example.org,email,0.9958
+2328,2333,Grace,first_name,0.9351
+2337,2346,Lindqvist,last_name,0.9273
+2360,2389,"1427 Fernhollow Lane, Apt 3B,",street_address,0.9718
+2390,2400,Pittsburgh,other,0.583
+2402,2404,PA,other,0.6508
+2405,2410,15217,other,0.9878
+2416,2427,900-31-8826,other,0.9944
+2429,2431,PA,other,0.9651
+2449,2459,99 412 087,other,0.9813
+2483,2493,"July, 1979",other,0.7225
+2545,2554,011000015,other,0.9736
+2564,2576,000123456789,other,0.9976
+2882,2887,Priya,first_name,0.9989
+2888,2893,Raman,last_name,0.9979
+2897,2923,Raman Precision Components,company_name,0.9914
+2930,2962,IBAN GB82 WEST 1234 5698 7654 32,other,0.9175
+3010,3042,cHJpeWEucmFtYW5AZXhhbXBsZS5uZXQ=,other,0.9637
+3156,3161,Paris,other,0.8003
+3207,3212,Paris,other,0.9982
+3214,3220,France,other,0.9955
+3278,3297,14 Rue de l'Exemple,street_address,0.9997
+3299,3304,75008,other,0.9986
+3534,3545,Summer2026!,other,0.999
+3570,3602,sk_test_4eC39HqLyjWDarjtT1zdp7dc,other,0.8665
+3722,3733,MRN-0048812,other,0.8408
+3858,3890,Three Rivers Occupational Clinic,street_address,0.8127
+3959,3963,Rose,first_name,0.6478
+3968,3970,47,other,0.6816
+3972,3988,warehouse picker,other,0.8773
+4040,4050,08/02/2026,other,0.9984
+4076,4080,Rose,first_name,0.8386
+4256,4268,570-555-0193,phone_number,0.9818
+4294,4302,Scranton,other,0.9815
+4334,4348,1 570 555 0193,phone_number,0.9847
+4440,4457,1HGCM82633A004352,other,0.7546
+4465,4476,PA ZKT-4419,other,0.9973
+4497,4519,"40.4406° N, 79.9959° W",other,0.908
+4552,4557,18:06,other,0.9979
+4648,4649,.,first_name,0.8083
+4650,4659,Lindqvist,last_name,0.9383
+4765,4771,Hunter,last_name,0.973
+4773,4777,Bill,first_name,0.9648
+4833,4839,Hunter,last_name,0.6819
+4908,4915,William,first_name,0.9864
+4919,4925,Hunter,last_name,0.9884
+4939,4947,E-198830,other,0.999
+4998,5004,Hunter,last_name,0.974
+5017,5043,william.hunter@example.com,email,0.9999
+5123,5127,Erie,other,0.9977
+5145,5153,Danielle,first_name,0.987
+5154,5160,Hunter,last_name,0.9961
+5184,5196,814-555-0128,phone_number,0.9995
+5275,5287,203.0.113.42,other,0.9917
+5395,5401,Kieran,first_name,0.9994
+5402,5412,Abernathy-,last_name,0.7836
+5412,5416,Shaw,last_name,0.8793
+5418,5445,"2215 W. Liberty Ave, Unit 9",street_address,0.9998
+5447,5457,Pittsburgh,other,0.9757
+5459,5471,Pennsylvania,other,0.9727
+5472,5477,15226,other,0.9961
+5485,5497,412.555.0111,phone_number,0.9996
+5505,5533,k_abernathy​shaw@example.com,email,0.9999
+5668,5677,963545637,other,0.9663
+5726,5736,1991-11-02,date_of_birth,0.9964
+5762,5789,Halvorsen Freight Logistics,company_name,0.9858
+5822,5832,02/28/2025,other,0.9974
+5903,5924,Ortega & Fielding LLP,company_name,0.9791
+5935,5941,Samuel,first_name,0.9912
+5942,5948,Ortega,last_name,0.9965
+5950,5969,sortega@example.com,email,0.9998
+6072,6079,Okonkwo,last_name,0.9541
+6080,6085,Reyes,last_name,0.4899
+6091,6100,Lindqvist,last_name,0.9222
+6106,6111,Raman,last_name,0.5225
+6144,6148,Rose,first_name,0.9429
+6197,6214,"November 12, 2026",other,0.9986
+6445,6460,General Counsel,other,0.7211
+6462,6473,HR Director,other,0.6564
