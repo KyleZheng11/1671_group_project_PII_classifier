@@ -5,4 +5,4 @@
 
 
 ### Generative AI Use
-- As stated in the class website, we used LLMs to help generate portions of our code. We utilized ChatGPT and Claude to help generate portions of the code involving the BERT training and BERT evaluation. 
+- As stated in the class website, we used LLMs to help generate portions of our code. We utilized ChatGPT and Claude to help generate portions of the code involving the BERT training and BERT evaluation. Since the libraries we used to train BERT were new to us, we largely used LLM's to generate code for those sections. However, we used our knowledge regarding the training of these models to steer the LLM to solve the problems we had. 
