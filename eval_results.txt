@@ -1,0 +1,109 @@
+Documents tested: 1000   Gold PII items: 8810
+
+=== TOKEN LEVEL (per category) ===
+                precision    recall  f1-score   support
+
+    first_name     0.9943    0.9909    0.9926       877
+     last_name     0.9911    0.9970    0.9940       669
+         email     0.9986    0.9986    0.9986      3574
+street_address     0.9932    0.9898    0.9915       590
+  phone_number     0.9743    0.9878    0.9810      1151
+ date_of_birth     0.9952    1.0000    0.9976      1040
+  company_name     0.9823    0.9561    0.9690      1275
+         other     0.9811    0.9804    0.9807     21940
+
+     micro avg     0.9842    0.9832    0.9837     31116
+     macro avg     0.9888    0.9876    0.9881     31116
+  weighted avg     0.9842    0.9832    0.9837     31116
+
+=== SPAN LEVEL (exact match, per category) ===
+                precision    recall  f1-score   support
+
+  company_name     0.9605    0.9288    0.9444       576
+ date_of_birth     0.9952    1.0000    0.9976       208
+         email     0.9948    0.9948    0.9948       577
+    first_name     0.9943    0.9943    0.9943       874
+     last_name     0.9901    0.9967    0.9934       602
+         other     0.9547    0.9523    0.9535      5576
+  phone_number     0.9643    0.9878    0.9759       246
+street_address     0.9803    0.9868    0.9835       151
+
+     micro avg     0.9658    0.9635    0.9646      8810
+     macro avg     0.9793    0.9802    0.9797      8810
+  weighted avg     0.9657    0.9635    0.9646      8810
+
+=== CONFUSION MATRIX (token level; rows = gold, columns = predicted) ===
+             first     last    email   street    phone      dob  company    other     none
+    first      869        1        0        0        0        0        0        0        7
+     last        2      667        0        0        0        0        0        0        0
+    email        1        1     3569        0        0        0        0        0        3
+   street        0        0        0      584        0        0        0        4        2
+    phone        0        0        0        0     1137        0        0       14        0
+      dob        0        0        0        0        0     1040        0        0        0
+  company        0        0        0        0        0        0     1219        1       55
+    other        1        1        1        0       24        5        3    21509      396
+     none        1        3        4        4        6        0       19      396   180041
+
+=== EXAMPLE INPUT ===
+Dear John Saludes,
+
+Your new ATM card PIN is 434728.
+
+=== EXAMPLE OUTPUT ===
+token                 gold                predicted
+Dear                  O                   O
+John                  B-first_name        B-first_name
+Saludes               B-last_name         B-last_name
+,                     O                   O
+Your                  O                   O
+new                   O                   O
+ATM                   O                   O
+card                  O                   O
+PIN                   O                   O
+is                    O                   O
+434728                B-other             B-other
+.                     O                   O
+
+=== FALSE POSITIVES (301 total, showing up to 10) ===
+  [phone_number] '7890'
+      context: ...at ( 612 ) 555 - 7890 . Our team is available to...
+  [other] 'laborer'
+      context: ...fitness journey . As a construction laborer , you need to fuel your...
+  [other] 'or related worker'
+      context: ..., news or street vendor , or related worker , would be eligible for disability...
+  [other] 'banking'
+      context: ...is to be completed by a banking official upon verification of the above...
+  [other] 'Attending Physician'
+      context: ...| Admission Date | | | Attending Physician | | | Diagnosis | |...
+  [other] 'June 30 , 2024'
+      context: ...January 1 , 2024 , to June 30 , 2024 , identified several vulnerabilities and compliance...
+  [other] '1 hour'
+      context: ...Strength Training | | Duration | 1 hour | | Sets / Reps |...
+  [other] 'Software Team'
+      context: ...software applications . | Software | Software Team | Deployment within 2 business days...
+  [company_name] 'Mhardeh Sports'
+      context: ...* Stadium Name : * * Mhardeh Sports Arena * * Location Coordinate :...
+  [email] 'roger_combs @ gmail . com'
+      context: ...01 / 01 / 2023 by roger_combs @ gmail . com . 2 . The issue has...
+
+=== FALSE NEGATIVES (322 total, showing up to 10) ===
+  [other] 'Fitness and Nutrition Test'
+      context: ...* * Fitness and Nutrition Test * * * * Personal Information...
+  [other] 'Funeral Director'
+      context: ...: _______________________________________________________________ | | | | Funeral Director Signature : _______________________________________________________________ | - -...
+  [other] '60 seconds'
+      context: ...4 sets of 15 reps , 60 seconds rest * Jump Squats : 4...
+  [other] 'Dr .'
+      context: ...me at FRTTLA45JX2 . Sincerely , Dr . Jane Doe...
+  [company_name] 'Strategic Insights Group'
+      context: ...* A / B Testing Report Strategic Insights Group September 15 , 2024 * *...
+  [other] 'Sponsor'
+      context: ...and activities ; WHEREAS , the Sponsor desires to support the Sports Organization...
+  [other] 'Dr .'
+      context: ...Medical Certificate I , Dr . [ Name Withheld ] , hereby...
+  [other] 'expert'
+      context: ...focused on marketing strategy . Our expert - led sessions are designed to...
+  [other] 'student'
+      context: ...momentary lapse in attention . The student was distracted by a notification on...
+  [other] 'Auditor'
+      context: ...: * * 20240815 * * Auditor Details : * * - *...
